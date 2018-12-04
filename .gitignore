@@ -1,15 +1,30 @@
-# mac
+# Mac
 .DS_Store
 
-# intellij idea
+# Intellij idea
 *.log
 *.iml
 *.ipr
 *.iws
 .idea
+.idea_modules
+.classpath
+.project
 
-# sbt
+# SBT
 bin/
-project/
+project/project
+project/target
 target/
 build/
+
+# Others
+logs
+tmp
+tags
+.history
+/.settings
+.cache
+/out
+/RUNNING_PID
+/nohup.out

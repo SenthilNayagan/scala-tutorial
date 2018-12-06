@@ -1,6 +1,8 @@
 package org.earlycode.scalatutorial.basics
 
 object VariableTypes {
+  // "var" type variable are mutable and "val" type is immutable
+
   // Val - Referencing/reassigning a value does not re-compute it.
   val valX = 1 + 1
   println(valX) // 2

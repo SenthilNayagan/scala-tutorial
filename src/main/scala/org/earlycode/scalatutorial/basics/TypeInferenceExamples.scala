@@ -8,4 +8,7 @@ object TypeInferenceExamples extends App {
   val myVal = 10
   var myVar = "SpaceX"
   var myBoolean = true
+
+  // We can also explicitly state the type, like this:
+  val x: Int = 1 + 1
 }

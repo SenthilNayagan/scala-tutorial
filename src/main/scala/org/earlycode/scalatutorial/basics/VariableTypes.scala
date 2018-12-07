@@ -1,5 +1,6 @@
 package org.earlycode.scalatutorial.basics
 
+
 object VariableTypes {
   // "var" type variable are mutable and "val" type is immutable
 

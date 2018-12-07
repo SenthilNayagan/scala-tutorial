@@ -1,5 +1,6 @@
 package org.earlycode.scalatutorial.basics
 
+
 object TypeInferenceExamples extends App {
   // Scala compiler figures out the type of the variable based
   // on the value assigned to it.

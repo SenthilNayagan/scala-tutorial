@@ -18,6 +18,7 @@ object VariableTypes {
   // Able to reassign a value.
   var varX = 1 + 1
   varX = 2 // This reassign is possible.
+  // varX = 2.5 - Compile error as we can't reassign to different type
 
 
   // Lazy Val

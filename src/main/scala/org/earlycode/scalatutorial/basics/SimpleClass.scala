@@ -5,6 +5,9 @@ package org.earlycode.scalatutorial.basics
   * Java's syntax with one important difference is that classes in
   * Scala can have parameters.
   *
+  * All classes in Scala inherit from a super-class. When no super-class
+  * is specified, scala.AnyRef is implicitly used.
+  *
   * This SimpleClass class takes two arguments: name and age.
   * These arguments must be passed when creating an instance of
   * class SimpleClass as follows: new SimpleClass("John", 30).

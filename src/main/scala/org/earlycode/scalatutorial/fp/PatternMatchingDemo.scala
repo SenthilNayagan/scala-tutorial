@@ -3,7 +3,7 @@ package org.earlycode.scalatutorial.fp
 object PatternMatchingDemo {
   def main(args: Array[String]): Unit = {
     println(numToString(3))
-    println(numToString(10))
+    println(numToString(10)) // Matches the default case
   }
 
 

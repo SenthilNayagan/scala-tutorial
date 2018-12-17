@@ -14,6 +14,11 @@ abstract class Pet(name: String) {
 class Dog(name: String) extends Pet(name) {
   // Implementation of abstract method
   def printName: Unit = println("Hi there, I am " + name)
+
+  // Overrides the implemented method to add more details
+  override def printAge: Unit = {
+    println(name + "'s age is " + age)
+  }
 }
 
 object AbstractClassDemo extends App {

@@ -1,6 +1,6 @@
 package org.earlycode.scalatutorial.basics
 
-class MyClass {
+class MyBaseClass {
   private var myFlagOne: Boolean = false
   protected var myFlagTwo: Boolean = false
 
@@ -16,7 +16,7 @@ class MyClass {
     println("myFlagTwo: " + myFlagTwo)
   }
 
-  def showFlags(other: MyClass) = {
+  def showFlags(other: MyBaseClass) = {
     println("Via current object: " + this.myFlagOne)
     println("Via current object: " + this.myFlagTwo)
 
@@ -26,8 +26,8 @@ class MyClass {
   }
 }
 
-class MySubClass extends MyClass {
-  def myMethod(): Unit = {
+class MySubClass extends MyBaseClass {
+  def showDetails(): Unit = {
     // Note that private members are not available to sub-classes.
     // Hence, the below statement won't compile as it is trying to
     // access the private member, myFlag of the base class.
@@ -38,11 +38,15 @@ class MySubClass extends MyClass {
   }
 }
 
+class SubOfSubClass extends MySubClass {
+  println(myFlagTwo)
+}
+
 object AccessingClassMembers extends App {
-  var myClassObjOne = new MyClass()
+  var myClassObjOne = new MyBaseClass()
   myClassObjOne.setFlags(true)
   myClassObjOne.showFlags()
 
-  var myClassObjTwo = new MyClass()
+  var myClassObjTwo = new MyBaseClass()
   myClassObjOne.showFlags(myClassObjTwo)
 }

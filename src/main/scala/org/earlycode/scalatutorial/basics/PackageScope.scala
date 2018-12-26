@@ -7,7 +7,8 @@ package org.earlycode.scalatutorial.basics {
   class PackageScope {
     val fruitObj = new Fruit
 
-    // Access by other classes in the same package i.e. basics package.
+    // Access by other classes in the same package
+    // i.e. basics package.
     fruitObj.doChop
 
     // Below statement won't compile as doEat method is available

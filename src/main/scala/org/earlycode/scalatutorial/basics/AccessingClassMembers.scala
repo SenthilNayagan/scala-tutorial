@@ -1,5 +1,6 @@
 package org.earlycode.scalatutorial.basics
 
+
 class MyBaseClass {
   private var myFlagOne: Boolean = false
   protected var myFlagTwo: Boolean = false

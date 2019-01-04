@@ -1,5 +1,6 @@
 package org.earlycode.scalatutorial.basics
 
+
 class Employee(var name: String, var age: Int)
 
 case class Student(var name: String, var age: Int)

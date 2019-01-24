@@ -1,7 +1,3 @@
-val x = "Hi"
-val y = "Hi"
-x == y
-x eq y
-x.hashCode
-y.hashCode
+class Emp(name: String, age: Int)
+new Emp("John", 20)
 

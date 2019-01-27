@@ -22,12 +22,21 @@ class Stack[A] {
 
 
 object GenericClass extends App {
-  val stackObj = new Stack[Int]
-  stackObj.push(10)
-  stackObj.push(20)
+  val stackObj1 = new Stack[Int]
+  stackObj1.push(10)
+  stackObj1.push(20)
+  //stackObj1.push("20") Type mismatch compile error
 
-  println(stackObj.peek)
+  println(stackObj1.peek)
 
-  println(stackObj.pop())
-  println(stackObj.pop())
+  println(stackObj1.pop())
+  println(stackObj1.pop())
+
+  val stackObj2 = new Stack[String]
+  stackObj2.push("one")
+  stackObj2.push("two")
+
+  println(stackObj2.peek)
+
+  println(stackObj2.pop())
 }
